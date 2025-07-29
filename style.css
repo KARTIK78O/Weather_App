@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  font-weight: 600;
   color: white;
 }
 /* Body */
@@ -51,7 +52,6 @@ body::before {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin: auto;
 }
 
 .city-input {
@@ -106,14 +106,50 @@ body::before {
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease;
-
 }
 
-.city-input,.search-btn:active {
-  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.3),
-              0 4px 20px rgba(0, 0, 0, 0.2);
+.city-input,
+.search-btn:active {
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.3), 0 4px 20px rgba(0, 0, 0, 0.2);
   border: 2px solid rgba(255, 255, 255, 0.4);
 }
 
-
 /* END INPUT_CONTAINER */
+
+/* RESUABLE ULILITES */
+.regular-txt{
+      font-weight: 400;
+
+}
+/* END:RESUABLE ULILITES */
+
+
+
+
+
+
+
+/* SECTION: WEATHER_INFO */
+
+.weather-info {
+    font-size: 20px;
+    margin-top: 20px;
+  
+  
+}
+
+.location-date-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    gap:3px;
+
+}
+
+/* END SECTION: WEATHER_INFO */

@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+/* Body */
+body {
+  background: url(assets/bg.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Boay::Before */
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(12px);
+}
+/* MAIN_CONTAINER */
+.main-container {
+  border: 0px solid;
+  width: 400px;
+  height: 496px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.05)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* INPUT CONTAINER */
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.city-input {
+  width: 80%;
+  padding: 10px 16px;
+  border-radius: 99px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.05)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  background: rgb(0, 0, 0, 0.15);
+  outline: none;
+  font-weight: 500;
+  transition: 0.25s border;
+}
+
+.city-input:focus {
+  border: 3px solid rgb(0, 0, 0, 0.15);
+}
+
+.city-input::placeholder {
+  color: rgb(255, 255, 255, 0.75);
+}
+
+.search-btn {
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  transform: scale(1.2);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.05)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  background: rgb(0, 0, 0, 0.15);
+  outline: none;
+  font-weight: 500;
+  transition: 0.25s border;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+
+}
+
+.city-input,.search-btn:active {
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.3),
+              0 4px 20px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+
+/* END INPUT_CONTAINER */

@@ -15,7 +15,7 @@ const windValueTxt = document.querySelectorAll(".humidity-value-txt")[1]; // win
 const weatherSummaryImg = document.querySelector(
   ".weather-summary-container img"
 );
-const currentDateTxt = document.querySelector(".current-date-txt");
+const currentDateTxt = document.querySelector(".current-date-txt"); 
 const forecastItemscontainer = document.querySelector(
   ".forecast-item-container"
 );

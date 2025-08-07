@@ -25,6 +25,7 @@
 
 ## 🚀 Live Demo:
 
-[Click here to view it live](weather-web-app-drab.vercel.app)
+[Click here to view it live](https://weather-web-app-drab.vercel.app)
+
 
 ---
